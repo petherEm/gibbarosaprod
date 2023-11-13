@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Heart, Search, ShoppingBag, User } from "lucide-react";
+import { Heart, Menu, Search, ShoppingBag, User } from "lucide-react";
+import NavbarMobile from "./NavbarMobile";
 
 const links = [
   {
@@ -80,6 +81,9 @@ const Navbar = () => {
             <ShoppingBag size={18} />
           </Button>
         </div>
+
+        {/* Mobile Navbar */}
+        <NavbarMobile />
       </div>
     </header>
   );

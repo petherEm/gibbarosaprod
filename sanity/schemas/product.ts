@@ -9,15 +9,35 @@ export default {
       title: 'Name',
     },
     {
-      name: 'Images',
+      name: 'images',
       type: 'array',
       title: 'Product Images',
       of: [{type: 'image'}],
     },
     {
+      name: 'brand',
+      type: 'string',
+      title: 'Brand',
+    },
+    {
+      name: 'size',
+      type: 'string',
+      title: 'Product Size',
+    },
+    {
       name: 'description',
       type: 'text',
       title: 'Description of product',
+    },
+    {
+      name: 'isFeatured',
+      type: 'boolean',
+      title: 'Displayed as featured product?',
+    },
+    {
+      name: 'isNewest',
+      type: 'boolean',
+      title: 'Displayed as newest product?',
     },
     {
       name: 'slug',
@@ -37,6 +57,17 @@ export default {
       title: 'Product Category',
       type: 'reference',
       to: [{type: 'category'}],
+    },
+    {
+      name: 'condition',
+      title: 'Product Condition',
+      type: 'string',
+    },
+    {
+      name: 'tags',
+      title: 'Product Tags',
+      type: 'array',
+      of: [{type: 'string'}],
     },
   ],
 }

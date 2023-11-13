@@ -4,6 +4,8 @@ import Hero from "@/components/Hero";
 import FeatureSection from "@/components/FeatureSection";
 import MidBanner from "@/components/MidBanner";
 import CarouselBags from "@/components/CarouselBags";
+import CarouselBags2 from "@/components/CarouselBags2";
+
 import Categories from "@/components/Categories";
 import FeaturedBijou from "@/components/FeaturedBijou";
 import Newsletter from "@/components/Newsletter";
@@ -16,6 +18,7 @@ export default function Home() {
       <FeatureSection />
       <MidBanner />
       <CarouselBags />
+      <CarouselBags2 />
       <Categories />
       <FeaturedBijou />
       <CarouselAllProd />

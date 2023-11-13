@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import TopBanner from "@/components/TopBanner";
 import Footer from "@/components/Footer";
+import ShoppingCartModal from "@/components/ShoppingCartModal";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${playfair.variable}`}>
         <TopBanner />
         <Navbar />
+        {/* <ShoppingCartModal /> */}
         {children}
         <Footer />
       </body>

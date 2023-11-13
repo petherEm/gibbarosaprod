@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
+
 const bags = [
   {
     id: 1,
@@ -47,10 +50,10 @@ const bags = [
   },
 ];
 
-const CarouselBags = () => {
+const YouMayLike = () => {
   return (
-    <section className="mt-10 mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
-      <h2 className="h2">Ikoniczne torebki (static)</h2>
+    <div className="mt-8">
+      <h2 className="mt-2 mb-2 h2">Mogą Ci się również spodobać (static)</h2>
       <div className="flex items-center space-x-6 overflow-x-auto thin-scrollbar scroll-smooth">
         {bags.map((bag, index) => (
           <div key={index} className="min-w-[310px] shadow-lg">
@@ -69,8 +72,8 @@ const CarouselBags = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default CarouselBags;
+export default YouMayLike;
